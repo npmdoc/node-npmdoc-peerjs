@@ -1,1 +1,38 @@
-{     "devDependencies": {         "electron-lite": "kaizhu256/node-electron-lite#alpha",         "utility2": "kaizhu256/node-utility2#alpha"     },     "name":"npmdoc-peerjs",     "homepage": "https://github.com/npmdoc/node-npmdoc-peerjs",     "repository": {         "type": "git",         "url": "https://github.com/npmdoc/node-npmdoc-peerjs.git"     },     "scripts": {         "build-ci": "utility2 shReadmeTest build_ci.sh"     },     "version": "0.0.1" }
+{
+    "author": "kai zhu <kaizhu256@gmail.com>",
+    "description": "#### basic api documentation for  [peerjs (v0.3.14)](https://github.com/peers/peerjs)  [![npm package](https://img.shields.io/npm/v/npmdoc-peerjs.svg?style=flat-square)](https://www.npmjs.org/package/npmdoc-peerjs) [![travis-ci.org build-status](https://api.travis-ci.org/npmdoc/node-npmdoc-peerjs.svg)](https://travis-ci.org/npmdoc/node-npmdoc-peerjs)",
+    "devDependencies": {
+        "electron-lite": "kaizhu256/node-electron-lite#alpha",
+        "utility2": "kaizhu256/node-utility2#alpha"
+    },
+    "engines": {
+        "node": ">=4.0"
+    },
+    "homepage": "https://github.com/npmdoc/node-npmdoc-peerjs",
+    "keywords": [
+        "documentation",
+        "peerjs"
+    ],
+    "license": "MIT",
+    "main": "lib.npmdoc_peerjs.js",
+    "name": "npmdoc-peerjs",
+    "nameAlias": "npmdoc_peerjs",
+    "nameOriginal": "npmdoc-peerjs",
+    "os": [
+        "darwin",
+        "linux"
+    ],
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/npmdoc/node-npmdoc-peerjs.git"
+    },
+    "scripts": {
+        "build-ci": "utility2 shReadmeTest build_ci.sh",
+        "env": "env",
+        "heroku-postbuild": "npm install \"kaizhu256/node-utility2#alpha\" && utility2 shDeployHeroku",
+        "postinstall": "[ ! -f npm_scripts.sh ] || ./npm_scripts.sh postinstall",
+        "start": "PORT=${PORT:-8080} utility2 start test.js",
+        "test": "(set -e; export PORT=$(utility2 shServerPortRandom); utility2 test test.js)"
+    },
+    "version": "2017.4.25"
+}
