@@ -1,0 +1,13 @@
+<svg height="158" width="720" xmlns="http://www.w3.org/2000/svg">
+<rect height="158" fill="#555" width="720"></rect>
+<text fill="#7f7" font-family="Courier New" font-size="12" xml:space="preserve">
+<tspan x="10" y="26">1 megabytes installed</tspan>
+<tspan x="10" y="42"></tspan>
+<tspan x="10" y="58">node_modules</tspan>
+<tspan x="10" y="74">└─┬ peerjs@0.3.14 </tspan>
+<tspan x="10" y="90">  ├── eventemitter3@0.1.6 </tspan>
+<tspan x="10" y="106">  ├── js-binarypack@0.0.9 </tspan>
+<tspan x="10" y="122">  └── reliable@0.1.0  (git+https://github.com/michelle/reliable.git#f09ba29d57a05beaa07990171f3f\</tspan>
+<tspan x="10" y="138">e7b746587aaa)</tspan>
+</text>
+</svg>
